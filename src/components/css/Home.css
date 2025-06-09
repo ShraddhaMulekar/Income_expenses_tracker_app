@@ -1,0 +1,49 @@
+.home_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: solid;
+  gap: 50px;
+  padding: 50px 15px;
+}
+.home_opt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /* border: solid green; */
+  border-radius: 10px;
+  width: 45%;
+  height: 130px;
+  color: white;
+  font-size: 20px;
+}
+.home_opt:first-child {
+  background-color: rgb(15, 196, 15);
+  &:hover {
+    background-color: rgb(2, 248, 2);
+    color: black;
+  }
+}
+.home_opt:nth-child(2) {
+  background-color: rgb(232, 15, 15);
+  &:hover {
+    background-color: rgb(253, 1, 1);
+    color: black;
+  }
+}
+.home_opt:nth-child(3) {
+  background-color: rgb(244, 104, 29);
+  &:hover {
+    background-color: rgb(218, 76, 0);
+    color: black;
+  }
+}
+.home_opt:last-child {
+  background-color: rgb(77, 188, 231);
+  &:hover {
+    background-color: rgb(3, 137, 190);
+    color: black;
+  }
+}
