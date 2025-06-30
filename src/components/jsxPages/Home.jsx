@@ -4,11 +4,13 @@ import { BiTransfer } from 'react-icons/bi'
 import { HiOutlineMinusCircle } from 'react-icons/hi'
 import { IoMdAddCircleOutline } from 'react-icons/io'
 import { TfiMenuAlt } from 'react-icons/tfi'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+    const navigate = useNavigate()
   return (
     <div className='home_container'>
-        <div className='home_opt'>
+        <div className='home_opt' onClick={()=>navigate("/add-income-form")}>
             <IoMdAddCircleOutline />
             <h3>Add Income</h3>
         </div>

@@ -1,3 +1,7 @@
+.form_main_container{
+background: radial-gradient(circle,rgb(192, 212, 248) 0%, rgb(216, 230, 254) 96%);
+height: 105vh ;
+}
 .form_container {
   display: flex;
   flex-direction: column;
@@ -17,25 +21,38 @@ h2 {
   gap: 5px;
 }
 .form_input {
-  width: 300px;
-  height: 20px;
+  width: 400px;
+  height: 35px;
   padding: 5px;
   font-family: "Times New Roman", Times, serif;
   font-size: medium;
   font-weight: bold;
+  border: none;
+  border-radius: 4px;
+
 }
 .form_img {
-  margin-left: -35px;
-  padding: 5px 30px 5px 10px;
+  margin-left: -25px;
+  color: rgb(4, 135, 187);
 }
 .form_input_logo {
   display: flex;
   align-items: center;
 }
 .form_input_reminder {
-  width: 300px;
-  height: 50px;
+  width: 400px;
+  height: 60px;
   padding: 5px 30px 5px 10px;
   font-size: medium;
   font-weight: bold;
+  border: none;
+  border-radius: 4px;
+}
+button{
+  padding: 15px 40px;
+  font-weight: bold;
+  background: rgb(16, 103, 137);
+  border: none;
+  color: white;
+  border-radius: 5px;
 }
