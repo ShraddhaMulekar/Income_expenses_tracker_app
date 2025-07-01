@@ -14,15 +14,15 @@ const Home = () => {
             <IoMdAddCircleOutline />
             <h3>Add Income</h3>
         </div>
-        <div className='home_opt'>
+        <div className='home_opt' onClick={()=>navigate("/add-income-form")}>
             <HiOutlineMinusCircle />
             <h3>Add Expenses</h3>
         </div>
-        <div className='home_opt'>
+        <div className='home_opt' onClick={()=>navigate("/transfer")}>
             <BiTransfer />
             <h3>Transfer</h3>
         </div>
-        <div className='home_opt'>
+        <div className='home_opt' onClick={()=>navigate("/all-transaction")}>
             <TfiMenuAlt />
             <h3>Transactions</h3>
         </div>

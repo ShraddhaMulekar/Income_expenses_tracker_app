@@ -12,6 +12,9 @@ import Category from './components/jsxPages/Category'
 import Transaction from './components/jsxPages/Transaction'
 import Payment from './components/jsxPages/Payment'
 import Trend from './components/jsxPages/Trend'
+import BudgetBalChart from './components/jsxPages/BudgetBalChart'
+import PaymentMethod from './components/jsxPages/PaymentMethod'
+import Transfer from './components/jsxPages/Transfer'
 
 function App() {
 
@@ -26,6 +29,9 @@ function App() {
         <Route path='/all-transaction' element={<Transaction />} />
         <Route path='/payment-method' element={<Payment />} />
         <Route path='/trend' element={<Trend />} />
+        <Route path='/total-budget' element={<BudgetBalChart />} />
+        <Route path='/payment-method-chart' element={<PaymentMethod />} />
+        <Route path='/transfer' element={<Transfer />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signin' element={<SignIn />} />
         <Route path='/logout' element={<Logout />} />

@@ -31,7 +31,7 @@ const IncomeChart = () => {
       },
     });
     const data = await res.json();
-    console.log(data);
+    // console.log(data);
     const filterIncome = (data.expense || []).filter(
       (inc) => inc.type === "Income"
     );

@@ -56,7 +56,7 @@ const IncomeForm = () => {
   // console.log(formData);
   return (
     <div className="form_main_container">
-      <h2>Add Income</h2>
+      <h2>Add Income / Expenses Form </h2>
       <form className="form_container" onSubmit={handleSubmit}>
         <div className="form_opt">
           <span>
