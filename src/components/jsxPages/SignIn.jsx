@@ -27,8 +27,9 @@ const SignIn = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className="form_container" style={{backgroundColor:"#d8f2f8",height:"100vh"}}>
+      <h2>Sign in!</h2>
+      <form className="form_opt" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="userName">User Name:</label>
           <input
@@ -38,8 +39,10 @@ const SignIn = () => {
             name="userName"
             value={form.userName}
             onChange={handleInput}
+            className="form_input"
+            style={{marginLeft:"10px"}}
           />
-        </div>
+        </div> <br />
         <div>
           <label htmlFor="email">Email:</label>
           <input
@@ -49,8 +52,10 @@ const SignIn = () => {
             name="email"
             value={form.email}
             onChange={handleInput}
+            className="form_input"
+            style={{marginLeft:"10px"}}
           />
-        </div>
+        </div> <br />
         <div>
           <label htmlFor="password">Password:</label>
           <input
@@ -60,12 +65,14 @@ const SignIn = () => {
             name="password"
             value={form.password}
             onChange={handleInput}
+            className="form_input"
+            style={{marginLeft:"10px"}}
           />
-        </div>
+        </div><br />
         <button onSubmit={handleSubmit}>Sign in!</button>
       </form>
       <p>
-        already registered!
+        already registered! 
         <button onClick={() => navigate("/login")}>Log in!</button>
       </p>
     </div>
