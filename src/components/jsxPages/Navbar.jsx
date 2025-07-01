@@ -35,7 +35,7 @@ const Navbar = () => {
           <TfiMenuAlt />
           <p>All Transactions</p>
         </div>
-        <div className="navbar_opt">
+        <div className="navbar_opt" onClick={()=>navigate("/payment-method")}>
           <MdOutlinePayments />
           <p>Payment Method</p>
         </div>
@@ -47,7 +47,7 @@ const Navbar = () => {
           <FaBullhorn />
           <p>Budget</p>
         </div>
-        <div className="navbar_opt">
+        <div className="navbar_opt" onClick={()=>navigate("/trend")}>
           <FaArrowTrendUp />
           <p>Trend</p>
         </div>

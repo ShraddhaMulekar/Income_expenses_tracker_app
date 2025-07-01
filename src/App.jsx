@@ -10,6 +10,8 @@ import Summary from './components/jsxPages/Summary'
 import CategoryPieChart from './components/jsxPages/CategoryPieChart'
 import Category from './components/jsxPages/Category'
 import Transaction from './components/jsxPages/Transaction'
+import Payment from './components/jsxPages/Payment'
+import Trend from './components/jsxPages/Trend'
 
 function App() {
 
@@ -22,6 +24,8 @@ function App() {
         <Route path='/category-chart' element={<CategoryPieChart />} />
         <Route path='/category' element={<Category />} />
         <Route path='/all-transaction' element={<Transaction />} />
+        <Route path='/payment-method' element={<Payment />} />
+        <Route path='/trend' element={<Trend />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signin' element={<SignIn />} />
         <Route path='/logout' element={<Logout />} />
