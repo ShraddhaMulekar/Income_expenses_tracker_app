@@ -10,6 +10,7 @@ import {
   plugins,
   PointElement,
   Tooltip,
+  Filler
 } from "chart.js";
 
 Chart.register(
@@ -18,7 +19,8 @@ Chart.register(
   PointElement,
   CategoryScale,
   Tooltip,
-  Legend
+  Legend,
+  Filler
 );
 
 const IncomeChart = () => {

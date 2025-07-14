@@ -14,7 +14,7 @@ const Transaction = () => {
         },
       });
       const data = await res.json();
-      console.log(data.expense);
+      // console.log(data.expense);
       setTransactions(data.expense);
     } catch (error) {
       console.log(error);

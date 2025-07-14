@@ -16,7 +16,7 @@ const CategoryPieChart = () => {
       },
     });
     const data = await res.json();
-    console.log(data);
+    // console.log(data);
     if (data.expense) {
       setCategoriesChart(data.expense);
     } else {
@@ -39,7 +39,7 @@ const CategoryPieChart = () => {
 
   const balance = totalIncome - totalExpenses;
 
-  console.log(totalIncome, totalExpenses, balance);
+  // console.log(totalIncome, totalExpenses, balance);
 
   const pieChart = {
     label: ["Income", "Expenses", "Balance"],

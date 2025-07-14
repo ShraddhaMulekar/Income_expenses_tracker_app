@@ -37,11 +37,13 @@ const Category = () => {
           textAlign: "center",
         }}
       >
-        {uniqueCategory.map((cat, i) => (
-          <tr key={i}>
-            <td>{cat}</td>
-          </tr>
-        ))}
+        <tbody>
+          {uniqueCategory.map((cat, i) => (
+            <tr key={i}>
+              <td>{cat}</td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </div>
   );

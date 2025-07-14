@@ -21,7 +21,7 @@ const SignIn = () => {
       body: JSON.stringify(form),
     });
     const data = await res.json();
-    console.log(data);
+    // console.log(data);
     alert(data.msg);
     navigate("/login");
   };

@@ -1,6 +1,6 @@
 import React from "react";
 
-const PaymentMethod = () => {
+const Reminder = () => {
   return (
     <div style={{ width: "40%", margin: "auto" }}>
       <h2>Payment Method Chart</h2>
@@ -13,4 +13,4 @@ const PaymentMethod = () => {
   );
 };
 
-export default PaymentMethod;
+export default Reminder;

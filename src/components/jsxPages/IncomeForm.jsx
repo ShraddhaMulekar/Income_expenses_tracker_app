@@ -40,7 +40,7 @@ const IncomeForm = () => {
       body: JSON.stringify(formData),
     });
     const data = await res.json();
-    // console.log(data);
+
     alert(data.msg);
     setFormData({
       title: "",
@@ -53,7 +53,7 @@ const IncomeForm = () => {
       recurring: "",
     });
   };
-  // console.log(formData);
+
   return (
     <div className="form_main_container">
       <h2>Add Income / Expenses Form </h2>

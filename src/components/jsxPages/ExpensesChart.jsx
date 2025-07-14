@@ -10,6 +10,7 @@ import {
   CategoryScale,
   Tooltip,
   Legend,
+  Filler
 } from "chart.js";
 
 Chart.register(
@@ -18,7 +19,8 @@ Chart.register(
   LinearScale,
   CategoryScale,
   Tooltip,
-  Legend
+  Legend,
+  Filler
 );
 
 const ExpensesChart = () => {

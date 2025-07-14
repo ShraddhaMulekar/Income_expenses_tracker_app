@@ -15,7 +15,7 @@ const Logout = () => {
             }
         })
         const data = await res.json()
-        console.log(data)
+        // console.log(data)
         alert(data.msg)
         localStorage.removeItem("token")
         navigate("/login")

@@ -15,6 +15,7 @@ import Trend from './components/jsxPages/Trend'
 import BudgetBalChart from './components/jsxPages/BudgetBalChart'
 import PaymentMethod from './components/jsxPages/PaymentMethod'
 import Transfer from './components/jsxPages/Transfer'
+import Reminder from './components/jsxPages/Reminder'
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
         <Route path='/signin' element={<SignIn />} />
         <Route path='/logout' element={<Logout />} />
         <Route path='/add-income-form' element={<IncomeForm />} />
+        <Route path='/reminders' element={<Reminder />} />
       </Routes>
     </BrowserRouter>
   )

@@ -54,7 +54,7 @@ const Navbar = () => {
           <FaArrowTrendUp />
           <p>Trend</p>
         </div>
-        <div className="navbar_opt">
+        <div className="navbar_opt" onClick={()=>navigate("/reminders")}>
           <IoIosNotifications />
           <p>Reminders</p>
         </div>
