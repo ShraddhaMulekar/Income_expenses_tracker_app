@@ -1,4 +1,4 @@
-const backendUrl = "https://income-exp-backend-app.onrender.com/"
+const backendUrl = "https://income-exp-backend-app-1.onrender.com/"
 // const backendUrl = "http://localhost:4050/"
 
 
