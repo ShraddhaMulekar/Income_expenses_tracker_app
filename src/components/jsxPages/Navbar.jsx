@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <div className="navbar_container">
       <div className="navbar_img_container" onClick={() => navigate("/")}>
-        <img style={{ width: "50px" }} src="https://e7.pngegg.com/pngimages/13/299/png-clipart-money-management-expense-android-angle-personal-finance-thumbnail.png" alt="logo" />
+        <img style={{ width: "50px" }} src="https://play-lh.googleusercontent.com/k6EFFD6ezn_HBRkW9v6hZSRIr5tuDNYGwI0DXzSh-kv6YrDWPW8ylEky4tOLy6Gry8NB=w240-h480-rw" alt="logo" />
       </div>
       <div className="navbar_content">
         <div className="navbar_opt" onClick={() => navigate("/summary")}>
