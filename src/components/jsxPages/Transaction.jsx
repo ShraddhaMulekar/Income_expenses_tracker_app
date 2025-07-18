@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import backendUrl from "../../../config/backendUrl";
+import "../css/Edit.css"
 
 const Transaction = () => {
   const [transactions, setTransactions] = useState([]);
@@ -129,29 +130,13 @@ const Transaction = () => {
       <br />
       {/* form for edit */}
       {editData && (
-        <div
-          style={{
-            // marginTop: "20px",
-            padding: "10px",
-            border: "1px solid #ccc",
-            margin: "auto",
-            width: "30%",
-            textAlign: "center",
-          }}
-        >
+        <div className="edit-transaction-container">
           <h3>Edit Transaction</h3>
           <br />
-          <form
-            style={{
-              display: "flex",
-              alignItems: "start",
-              flexDirection: "column",
-            }}
-            onSubmit={handleEditForm}
-          >
-            <div>
+          <form className="edit-transaction-form" onSubmit={handleEditForm}>
+            <div className="form-group">
               <label>
-                Date:
+                Date
                 <input
                   type="date"
                   name="date"
@@ -161,9 +146,9 @@ const Transaction = () => {
                 />
               </label>
             </div>
-            <div>
+            <div className="form-group">
               <label>
-                Type:
+                Type
                 <select
                   name="type"
                   value={editData.type}
@@ -175,9 +160,9 @@ const Transaction = () => {
                 </select>
               </label>
             </div>
-            <div>
+            <div className="form-group">
               <label>
-                Title:
+                Title
                 <input
                   type="text"
                   name="title"
@@ -187,9 +172,9 @@ const Transaction = () => {
                 />
               </label>
             </div>
-            <div>
+            <div className="form-group">
               <label>
-                Category:
+                Category
                 <input
                   type="text"
                   name="category"
@@ -199,9 +184,9 @@ const Transaction = () => {
                 />
               </label>
             </div>
-            <div>
+            <div className="form-group">
               <label>
-                Amount:
+                Amount
                 <input
                   type="number"
                   name="amount"
@@ -211,12 +196,12 @@ const Transaction = () => {
                 />
               </label>
             </div>
-            <div style={{ marginTop: "10px" }}>
+            <div className="button-group">
               <button type="submit">Save Changes</button>
               <button
                 type="button"
                 onClick={() => setEditData(null)}
-                style={{ marginLeft: "10px" }}
+                className="cancel-button"
               >
                 Cancel
               </button>

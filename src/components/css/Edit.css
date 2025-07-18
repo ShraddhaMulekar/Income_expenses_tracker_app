@@ -1,0 +1,44 @@
+.edit-transaction-container {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: auto;
+  width: 30%;
+  text-align: center;
+}
+
+.edit-transaction-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  margin-top: 4px;
+  padding: 5px;
+  width: 350px;
+}
+
+.button-group {
+  margin-top: 10px;
+}
+
+.button-group button {
+  padding: 9px 10px;
+  margin-right: 10px;
+}
+
+.cancel-button {
+  background-color: #ba1111;
+  border: 1px solid #ccc;
+}
